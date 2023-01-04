@@ -13,8 +13,8 @@ HELP_1 = """✅**<u>Admin Commands:</u>**
 
 /pause or /cpause - Pause the playing music.
 /resume or /cresume- Resume the paused music.
-/mute or /cmute- Mute the playing music.
-/unmute or /cunmute- Unmute the muted music.
+/vcmute or /cmute- Mute the playing music.
+/vcunmute or /cunmute- Unmute the muted music.
 /skip or /cskip- Skip the current playing music.
 /stop or /cstop- Stop the playing music.
 /shuffle or /cshuffle- Randomly shuffles the queued playlist.
@@ -43,15 +43,12 @@ HELP_2 = """✅<u>**Play Commands:**</u>
 
 Available Commands = play , vplay , cplay
 
-ForcePlay Commands = playforce , vplayforce , cplayforce
+ForcePlay Commands = ⛩️ Disabled 
 
 **c** stands for channel play.
 **v** stands for video play.
-**force** stands for force play.
 
 /play or /vplay or /cplay  - Bot will start playing your given query on voice chat or Stream live links on voice chats.
-
-/playforce or /vplayforce or /cplayforce -  **Force Play** stops the current playing track on voice chat and starts playing the searched track instantly without disturbing/clearing queue.
 
 /channelplay [Chat username or id] or [Disable] - Connect channel to a group and stream music on channel's voice chat from your group.
 
