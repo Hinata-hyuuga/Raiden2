@@ -46,7 +46,7 @@ async def auth(client, message: Message, _):
         from_user_id = message.from_user.id
         _check = await get_authuser_names(message.chat.id)
         count = len(_check)
-        if int(count) == 20:
+        if int(count) == 50:
             return await message.reply_text(_["auth_1"])
         if token not in _check:
             assis = {
@@ -73,7 +73,7 @@ async def auth(client, message: Message, _):
     count = 0
     for smex in _check:
         count += 1
-    if int(count) == 20:
+    if int(count) == 50:
         return await message.reply_text(_["auth_1"])
     if token not in _check:
         assis = {
