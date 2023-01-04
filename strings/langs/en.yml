@@ -27,7 +27,7 @@ call_11 : "Please add @{0} to your channel[ ID: {1}].\n\nBot is not able to get 
 
 # PLUGINS - Auth.py
 auth_1 : "You can only have 20 Users in your group's Authorised Users List (AUL)"
-auth_2 : "Added {0} to Authorised Users List. \nYou can Skip, Pause or Resume songs."
+auth_2 : "Added to Authorised Users List. \nYou can Skip, Pause or Resume songs."
 auth_3 : "Already in the Authorised Users List."
 auth_4 : "Removed from Authorised Users List of this Group."
 auth_5 : "Targeted user is not an Authorised User."
