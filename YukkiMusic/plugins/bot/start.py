@@ -8,7 +8,7 @@
 # All rights reserved.
 
 import asyncio
-
+import random
 from pyrogram import filters
 from pyrogram.types import (InlineKeyboardButton,
                             InlineKeyboardMarkup, Message)
@@ -34,6 +34,18 @@ from YukkiMusic.utils.inline import (help_pannel, private_panel,
 
 loop = asyncio.get_running_loop()
 
+EIIVIDEO = [
+  "BAACAgQAAx0CYT7QSgACAXZjtQzcPQAB1260K6HJzpiT35LjUecAAheVAAIKq6FRKFnBMu8NWsUeBA",
+  "https://telegra.ph/file/e33c0c5f6d7f4acfc8627.mp4",
+  "CgACAgQAAx0CYT7QSgACATdjswmfkheQBrd1g3RDTJ6HuDpIfgACcg4AAgx8mFEwjbPyaNyccR4E",
+  "CgACAgQAAx0CYT7QSgACATdjswmfkheQBrd1g3RDTJ6HuDpIfgACcg4AAgx8mFEwjbPyaNyccR4E",
+  "https://telegra.ph/file/baea294ed3562f4040198.mp4",
+  "https://telegra.ph/file/3c49a33a17ab930f9c49b.mp4",
+  "BAACAgQAAx0CYT7QSgACAXZjtQzcPQAB1260K6HJzpiT35LjUecAAheVAAIKq6FRKFnBMu8NWsUeBA",
+  "https://telegra.ph/file/b8542fce2aa8bf4efadc4.mp4",
+  "https://telegra.ph/file/ff061bcd2ed804013a06a.mp4",
+  "BAACAgQAAx0CYT7QSgACAXZjtQzcPQAB1260K6HJzpiT35LjUecAAheVAAIKq6FRKFnBMu8NWsUeBA",
+]
 
 @app.on_message(
     filters.command(get_command("START_COMMAND"))
@@ -195,8 +207,8 @@ async def start_comm(client, message: Message, _):
         out = private_panel(_, app.username, OWNER)
         if config.START_IMG_URL:
             try:
-                await message.reply_photo(
-                    photo=config.START_IMG_URL,
+                await message.reply_video(
+                    video=random.choice(EIIVIDEO),
                     caption=_["start_2"].format(
                         config.MUSIC_BOT_NAME
                     ),
