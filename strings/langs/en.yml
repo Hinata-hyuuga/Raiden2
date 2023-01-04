@@ -27,7 +27,7 @@ call_11 : "Please add @{0} to your channel[ ID: {1}].\n\nBot is not able to get 
 
 # PLUGINS - Auth.py
 auth_1 : "You can only have 20 Users in your group's Authorised Users List (AUL)"
-auth_2 : "Added to Authorised Users List of your group."
+auth_2 : "Added {0} to Authorised Users List. \nYou can Skip, Pause or Resume songs."
 auth_3 : "Already in the Authorised Users List."
 auth_4 : "Removed from Authorised Users List of this Group."
 auth_5 : "Targeted user is not an Authorised User."
@@ -54,7 +54,7 @@ admin_15 : "Not enough tracks in queue for the value given by you. Please choose
 admin_16 : "Failed to skip to specific track.\n\nCheck left queue by /queue"
 admin_17 : "{0}.. Please Wait"
 admin_18 : "Admin List Not Found\n\nPlease reload adminlist via /admincache or /reload"
-admin_19 : "You need to be admin with manage voice chat rights to perform this.\nIf you're already admin, reload admincache via /admincache "
+admin_19 : "No."
 admin_20 : "Admin cache reloaded successfully."
 admin_21 : "Nothing inside queue to shuffle"
 admin_22 : "Failed to shuffle.\n\nCheck queue : /queue"
@@ -74,8 +74,8 @@ admin_34 : "Failed to seek the current stream."
 # Bot 
 
 # Start
-start_1 : "Thanks for having me in {0}.\n{1} is alive.\n\nFor any assistance or help, checkout our support group and channel."
-start_2 : "Hello, My name is {0}.\n\nI'm a telegram streaming bot with some useful features. Supporting platforms like Youtube, Spotify, Resso, AppleMusic , Soundcloud etc.\n\nFeel free to add me to your groups."
+start_1 : "Thanks for having me in {0}.\n{1} is alive.\n\nThis is private bot for @Anime_Gaming_Chat_Global under © @AnimeRobots ⛩️"
+start_2 : "Hello, My name is {0}.\nA private Music Bot For:\n⛩️ɢʀᴏᴜᴘ~ @Anime_Gaming_Chat_Global \n🔮ᴘʟᴀʏʟɪꜱᴛ ᴄʜᴀɴɴᴇʟ~ @VC_Playlist \n\nAlso supporting platforms like 🎶Youtube 🎶Spotify 🎶Resso 🎶AppleMusic 🎶Soundcloud \nHit help button below to learn usage."
 start_3 : "Welcome To {0}\n\nI don't need any **admin permission** to work ( until asked for ).\n\nAssistant Username:- @{1}\nAssistant ID:- {2}"
 start_4 : "{0}'s Owner[{1}] has just joined your chat."
 start_5 : "A member of {0}'s Sudo User[{1}] has just joined your chat."
@@ -83,11 +83,11 @@ start_6 : "❗️ **Supergroup Needed** ❗️\n\nPlease convert your **group** 
 start_7 : "**Blacklisted Chat**\n\nYou're chat has been blacklisted by the Bot. Please ask any SudoUser to whitelist chat first. Check [Sudolist from here]({0})"
 
 # Help
-help_1 : "Click on the buttons below for more information. If you're facing any problem in command you can contact my bot owner or ask in support chat.\n\nAll commands can be used with: /"
+help_1 : "Click on the buttons below for more information.\nAll commands can be used with: /\n\n☕ʙᴏᴛ'ꜱ ᴏꜰꜰɪᴄɪᴀʟ ᴘʟᴀʏʟɪꜱᴛ ᴄʜᴀɴɴᴇʟ: @VC_Playlist \nOur most favourite/trending songs are added there liked by our group members, you song can also be added Ask admins"
 help_2 : "Contact me in PM for help."
 
 # Settings
-setting_1 : "⚙️ **Music Bot Settings**\n\n🖇**Group:** {0}\n🔖**Group ID:** `{1}`\n\n💡**Choose the function buttons from below which you want to edit or change.**"
+setting_1 : "⚙️ **Music Bot Settings**\n\n🖇**Group:** {0}\n🔖\n\n💡**Choose the function buttons from below which you want to edit or change."
 setting_3 : "⁉️ What is This?\n\n1) Direct: Plays search queries directly. Use -v to play videos in direct mode.\n\n2) Inline: Returns Inline Markup Buttons for choosing between video & audio."
 setting_4 : "⁉️ What is This?\n\n👥 Everyone: Anyone can use admin commands(skip, pause, resume etc) present in this group.\n\n🙍 Admin Only: Only admins and authorized users can use admin commands."
 setting_5 : "No Authorized Users Found\n\nYou can allow any non-admin to use my admin commands by /auth and delete by using /unauth"
@@ -142,7 +142,7 @@ cplay_5 : "Only Channels are supported."
 cplay_6 : "You need to be the **Owner** of the channel[{0}] to connect it with this group.\n**Channel's Owner:** @{1}\n\nAlternatively you can link your group to that channel and then try connnecting with `/channelplay linked`"
 
 #Play
-play_1 : "🔄 Processing Query... Please Wait!"
+play_1 : "🔮"
 play_2 : "**🏷Channel Play Mode**\n\n🔄 Processing Query... Please Wait!\n**Linked Channel:** {0}"
 play_3 : "Failed to Process Query!"
 play_4 : "🖇 **Admins Only Play**\nOnly Admins and Auth Users can play music in this group.\n\nChange mode via /playmode and if you're already admin, reload admincache via /admincache"
@@ -163,7 +163,7 @@ play_18 : "**No Active Voice Chat Found**\n\nTo use force play, there must be an
 
 
 #Playlist
-playlist_1 : "**Usage:** /play [Music Name or Youtube Link or Reply to Audio]\n\nIf you want to play Bot's Server Playlist! Press the button below."
+playlist_1 : "**Usage:** /play [Music Name or Youtube Link or Reply to Audio]"
 playlist_2 : "Getting your playlist. Please wait"
 playlist_3 : "You have no playlist on Bot's Server."
 playlist_4 : "Fetched Playlist:\n\n"
@@ -204,8 +204,8 @@ lyrics_3 : "❌ Failed to fetch lyrics😭.\n\n💡**Tried Searching For:** {0}"
 lyrics_4 : "Click on the button below and get searched lyrics to avoid long spam types lyrics search."
 
 #Ping
-ping_1 : "Pong!!!!"
-ping_2 : "{0} is working good with a ping of `{1}` ms.\n\nBot's uptime is {2} and has used a total of {3} server's storage. Cpu load is about {4} with a consumption of {5} Ram. Py-Tgcalls client is also having a good ping of `{6}` ms."
+ping_1 : "Pinging..."
+ping_2 : "⛩️ {0} is Working Goodng\n   🔮PING: `{1}` ms.\n☕UPTIME: {2}\n\nᴜꜱᴇᴅ ꜱᴇʀᴠᴇʀ'ꜱ ꜱᴛᴏʀᴀɢᴇ: {3}\nCPU ʟᴏᴀᴅ: {4}\nRAM ᴄᴏɴꜱᴜᴍᴘᴛɪᴏɴ: {5} \n💜𝙿𝚢-𝚃𝚐𝚌𝚊𝚕𝚕𝚜 𝙲𝙻𝙸𝙴𝙽𝚃 𝙿𝙸𝙽𝙶: `{6}` ms"
 
 
 # Song
@@ -225,7 +225,7 @@ song_11 : "Uploading Started\n\nUploading speed could be slow. Please hold on.."
 queue_1 : "Please Wait..Fetching Queue.."
 queue_2 : "Queued List is empty. No tracks found"
 queue_3 : "<u>**Queued Tracks:</u>**  [Checkout More Queued Tracks From Here]({0})"
-queue_4 : "⏳ Added to Queue at **#{0}\n\n💡Title:** {1}\n**⏱Duration:** {2}\n👤**Added By:** {3}"
+queue_4 : "☕𝚀𝚄𝙴𝚄𝙴 **{0}**\n🔊ᴛɪᴛʟᴇ: {1}\nᴅᴜʀᴀᴛɪᴏɴ: {2}\n\nᴀᴅᴅᴇᴅ ʙʏ: {3}"
 queue_5 : "Only one track inside queue, Please add some more to check list"
 
 # All Streaming Lines
@@ -237,8 +237,8 @@ stream_4 : "📡 **Started Streaming** 💡\n\n**🏷Title:** [{0}]({1})\n⌛️
 # Inline Buttons
 
 #General Buttons
-CLOSE_BUTTON  : "🗑 Close"
-CLOSEMENU_BUTTON  : "🗑 Close Menu"
+CLOSE_BUTTON  : "ᴄʟᴏꜱᴇ"
+CLOSEMENU_BUTTON  : "ᴄʟᴏꜱᴇ"
 BACK_BUTTON : "⬅ Back"
 UNBAN_BUTTON : "🗑 Unban Assistant"
 
@@ -246,14 +246,14 @@ UNBAN_BUTTON : "🗑 Unban Assistant"
 L_B_1 : "🚀 Checkout Lyrics Now"
 
 # Start
-S_B_1 : "🗒 Commands"
+S_B_1 : "❕Commands"
 S_B_2 : "🔧 Settings"
-S_B_3 : "📨 Support"
+S_B_3 : "ɢʀᴏᴜᴘ"
 S_B_4 : "📨 Channel"
-S_B_5 : "✚ Add me to your Group"
-S_B_6 : "💡 Git Repo"
-S_B_7 : "👤 Bot Owner"
-S_B_8 : "🔎 How to Use? Commands Menu."
+S_B_5 : "𝑨𝒏𝒊𝒎𝒆 𝑪𝒉𝒂𝒕 𝑪𝒐𝒎𝒎𝒖𝒏𝒊𝒕𝒚 [𝑬𝒏𝒈𝒍𝒊𝒔𝒉]"
+S_B_6 : "ᴍᴏʀᴇ ʙᴏᴛꜱ"
+S_B_7 : "ᴅᴇᴠᴇʟᴏᴘᴇʀ"
+S_B_8 : "❕Commands Menu (Helper-Script⛑️)"
 
 #Help 
 H_B_1 : "Admin Commands"
@@ -276,8 +276,8 @@ P_B_4 : "🎵 Play Playlist"
 
 #Playlist
 PL_B_1 : "🚀 Play Playlist"
-PL_B_2 : "✚ Playlists"
-PL_B_3 : "✚ CPanel"
+PL_B_2 : "✚🎧"
+PL_B_3 : "⚙️"
 PL_B_4 : "📡 Play Mode"
 PL_B_5 : "🔄 Del Whole Playlist"
 PL_B_6 : "↗️ Delete Playlist"
@@ -442,31 +442,31 @@ gban_10 : "No Gbanned Users Found."
 gban_11 : "Please wait a while.. Fetching Gbanned users list"
 
 #Suggestions
-sug_0 : "❓**Do You Know?**\n\n✅ "
-sug_1 : "You can play music in two **search modes** i.e. Direct Mode and Inline Mode.\n\nChange modes via /playmode"
-sug_2 : "You can play music in two **play types** i.e. Everyone Mode and Admins Mode.\n\nChange modes via /playmode"
-sug_3 : "You can play music in **channels** too.\n\nSet channel_id via /channelplay and play via /cplay "
-sug_4 : "Non Admins can use admin commands too by adding them to** AUTH USERS LIST**. \nAdd any user to auth list by /auth , remove with /unauth and check auth users via /authusers"
-sug_5 : "Bot has a feature called **Clean Mode**.\nIt deletes the bot's messages after 5 Mins and ensures that  your chat remains clean.\n\nEnable or disable cleanmode from /settings [__Enabled by default__]"
-sug_6 : "You can play **Spotify** tracks and playlists too.\n\nStart playing now with /play [Spotify Link]"
-sug_7 : "You can play **Apple Music** tracks and playlists too.\n\nStart playing now with /play [Apple Link]"
-sug_8 : "You can play **Resso Music** tracks and playlists too.\n\nStart playing now with /play [Resso Link]"
-sug_9 : "You can play **Sound Cloud** tracks and playlists too.\n\nStart playing now with /play [SoundCloud Link]"
-sug_10 : "You can play **Videos** in voice chat via /vplay [Video Name] or /play -v [Video Name]"
-sug_11 : "You can set **Audio Quality** of voice chat to Low, Medium or High.\n\nSet quality via /settings"
-sug_12 : "You can set **Video Quality** of voice chat to Low, Medium or High.\n\nSet quality via /settings"
-sug_13 : "You can check your **Statistics** on bot like Top 10 Played Tracks.\n\nGet Stats: /gstats "
-sug_14 : "You can check **Group's Stats** on bot like Top 10 Played Tracks.\n\nGet Stats: /gstats "
-sug_15 : "You can check bot's **Global Stats** like top 10 users, top 10 chats, top 10 tracks etc etc.\n\nCheck Stats: /gstats "
-sug_16 : "You can now mute the music which is playing on voice chat.\n\nCommand: /mute"
-sug_17 : "You can now unmute and mute the music which is playing on voice chat.\n\nCommand: /mute and /unmute"
-sug_18 : "You can search the lyrics of musics with us too..\n\nCommand: /lyrics [Music Name]"
-sug_19 : "You can download the music or video from the bot through Youtube.\n\nCommand: /song [Music Name]"
-sug_20 : "You can get a complete list of my commands that i accept.\n\nCommand: /help"
-sug_21 : "Bot has server-sided playlist option.\n\nYou can add music in your playlist and play them all together via /play"
-sug_22 : "You can now shuffle the queued musics on the bot.\n\nCommand: /shuffle"
-sug_23 : "You can check the queue of the musics.\n\nCommand: /queue"
-sug_24 : "You can check my owner and sudo users who manage me.\n\nCommand: /sudolist"
-sug_25 : "Bot has a feature called **Commands Delete Mode**. It deletes its executed commands automatically.\n\nEnable or disable deletemode from /settings [__Enabled by default__]"
-sug_26 : "You can change language of the bot to available languages for easy understanding.\n\nCommand: /language"
-sug_27 : "Bot has a feature called **Force Play**.\n\n**Force Play** stops the playing track on voice chat and starts playing the searched track instantly without disturbing/clearing queue.\n\nCommand: /playforce"
+sug_0 : "   "
+sug_1 : "(⁠≧⁠▽⁠≦⁠)"
+sug_2 : "(⁠*⁠ﾉ⁠・⁠ω⁠・⁠)⁠ﾉ⁠♫"
+sug_3 : "Inactivity serves no purpose whatsoever."
+sug_4 : "(⁠๑⁠╹⁠◡⁠╹⁠๑⁠)⁠ﾉ⁠♬"
+sug_5 : "♪⁠ ⁠(⁠^⁠ω⁠^)"
+sug_6 : "Bot can play **Spotify** tracks and playlists too."
+sug_7 : "(⁠?⁠・⁠・⁠)⁠σ"
+sug_8 : "🎋Contribute your playlist here~\n(⁠ﾉ⁠≧⁠∇⁠≦⁠)⁠ﾉ @VC_Playlist"
+sug_9 : "💕Checkout Group's Common Playlist @VC_Playlist"
+sug_10 : "💕🎧 You can Add your fav song in @VC_Playlist which can be played all at once."
+sug_11 : "(⁠ ⁠/⁠^⁠ω⁠^⁠)⁠/⁠♪⁠♪"
+sug_12 : "The Winter Shogun approaches"
+sug_13 : "Play RAIDEN SHOGUN'S BOOBA on SoundCloud"
+sug_14 : "Inactivity serves no purpose whatsoever."
+sug_15 : "Do visit @AnimeRobots 😸"
+sug_16 : "Meow"
+sug_17 : "(⁠ ⁠◜⁠‿⁠◝⁠ ⁠)🎵"
+sug_18 : "🎶(⁠~⁠￣⁠³⁠￣⁠)⁠~"
+sug_19 : ". . ."
+sug_20 : "☕ @NeptuneaBot"
+sug_21 : "Bored? play songs🎶"
+sug_22 : "Bored? listen songs with members🎵"
+sug_23 : "(⁠/⁠^⁠-⁠^⁠(⁠^⁠ ⁠^⁠*⁠)⁠/🎶"
+sug_24 : "🌸 @Sagiri_izumi_Robot"
+sug_25 : "💜 @VC_Playlist"
+sug_26 : "🔮 @AnimeRobots "
+sug_27 : "⛩️ @Anime_Gaming_Chat_Global"
